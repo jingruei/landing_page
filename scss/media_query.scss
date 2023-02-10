@@ -1,0 +1,40 @@
+@import 'reset';
+
+.title {
+    max-width: 1140px;
+    margin: auto;
+    height: 300px;
+    line-height: 300px;
+    background: #000;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+
+    @media print {
+        display: none;
+    }
+
+    @media screen and (max-width: 800px) {
+        background: blue;
+    }
+
+    @media screen and (max-width: 600px) {
+        background: red;
+    }
+}
+
+.print {
+    display:none;
+    max-width: 1140px;
+    margin: auto;
+    height: 300px;
+    line-height: 300px;
+    background: #000;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+
+    @media print {
+        display: block;
+    }
+}

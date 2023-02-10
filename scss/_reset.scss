@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-size: 16px;
+
+    &::placeholder {
+        color: #b8b8b8;
+    }
+
+    &::after, &::before {
+        box-sizing: border-box;
+    }
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}

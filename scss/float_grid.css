@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+*::-webkit-input-placeholder {
+  color: #b8b8b8;
+}
+
+*:-ms-input-placeholder {
+  color: #b8b8b8;
+}
+
+*::-ms-input-placeholder {
+  color: #b8b8b8;
+}
+
+*::placeholder {
+  color: #b8b8b8;
+}
+
+*::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.l-wrap {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.three-col-grid::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.three-col-grid .grid-item {
+  float: left;
+  background: #617ff7;
+  color: #fff;
+  margin-top: 20px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc((100% - 20px * 3) / 3);
+}
+
+@media screen and (max-width: 768px) {
+  .three-col-grid .grid-item {
+    width: calc(100% - 20px);
+  }
+}
+
+.column {
+  width: calc((100% - 20px * 12) / 12);
+  height: 80px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #1a64aa;
+  float: left;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    width: calc((100% - 20px * 4) / 4);
+  }
+}
+
+.fixed-gutter-grid::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.l-guest-article::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.l-guest {
+  width: calc((100% - 20px * 3) / 12 * 2);
+}
+
+@media screen and (max-width: 768px) {
+  .l-guest {
+    width: calc(100% - 20px);
+  }
+}
+
+.l-main {
+  width: calc((100% - 20px * 3) / 12 * 7);
+}
+
+@media screen and (max-width: 768px) {
+  .l-main {
+    width: calc(100% - 20px);
+  }
+}
+
+.l-sidebar {
+  width: calc((100% - 20px * 3) / 12 * 3);
+}
+
+@media screen and (max-width: 768px) {
+  .l-sidebar {
+    width: calc(100% - 20px);
+  }
+}
+/*# sourceMappingURL=float_grid.css.map */
